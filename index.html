@@ -3,12 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login | weather app</title>
+    <!-- CDN for the Tailwind css -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      
 </head>
-<body>
-<script>
-    console.log("Here we go");
+<body class="flex justify-center items-center h-screen bg-gradient-to-br from-blue-400 to-blue-900 justify">
+<div class="flex-justify-content p-8 bg-white w-80 shadow-lg ">
+    <h3 class="text-center mb-6 text-2xl text-gray-700 font-bold">Login</h3>
+    <input class="p-2 mb-2 w-full border border-gray-300 outline-none" id="email" type="email" placeholder="Email">
+    <input class="p-2 mb-2 w-full border border-gray-300 outline-none" id="password" type="password" placeholder="Password">
+    <!-- Button -->
+        <button onclick="LoginUser()" class="w-full bg-blue-500 rounded text-white py-2 hover:bg-blue-700">Login</button>
+
+</div>
+
     
-</script>    
+<script src="./script.js"></script>    
 </body>
 </html>
